@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+ 
+           <h2 class="heading">WEATHER APP</h2>
+
+           <div class="tab_container">
+            <div data-yourWeather    id="yourWeather"   class="tab">Your Weather</div>
+            <div data-searchWeather   id="searchWeather" class="tab">Search Weather</div>
+           </div>
+
+
+           <div class="weather_container">
+
+            <div data-grantAccess class="sub_container grant_access_location">
+                <img class="location_img" height="70px" width="70px" src="location.png" alt="">
+                <div class="allow_loc_access">Allow Location Access</div>
+                <button class="access_btn">Grant Access</button>
+            </div>
+
+            <div data-weather class="sub_container weather">
+
+                <div class="weather_location">
+                    <div data-locationName class="loc_name"></div>
+                    <img class="flag" data-locationFlag>
+                </div>
+
+                <div class="weather_desc"></div>
+
+                <div class="weather_icon">
+                    <img data-weatherIconImg height="50px" width="50px">
+                </div>
+
+                <div class="weather_temp"></div>
+
+                <div class="weather_cards_container">
+                    <!-- Windspeed -->
+                    <div class="weather_card">
+                        <img class="weather_card_img" src="windspeed.png" alt="">
+                        <p class="weather_card_content">WINDSPEED</p>
+                        <p class="weather_data" data-windspeed></p>
+                    </div>
+
+                    <!-- Windspeed -->
+                    <div class="weather_card">
+                        <img class="weather_card_img" src="humidity.png" alt="">
+                        <p class="weather_card_content">HUMIDITY</p>
+                        <p class="weather_data" data-humidity></p>
+                    </div>
+
+                    <!-- Windspeed -->
+                    <div class="weather_card">
+                        <img class="weather_card_img" src="cloud.png" alt="">
+                        <p class="weather_card_content">CLOUDS</p>
+                        <p class="weather_data" data-clouds></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-searchFormContainer class="sub_container search_form">
+
+                <form data-searchForm class="search_form2">
+                    <input class="search_input" type="text" placeholder="Search for city ...">
+                <button type="submit" class="search_btn"> 
+                    <img width="15px" height="15px" src="search.png" alt=""> 
+                </button>
+                </form>
+                
+            </div>
+
+            <div data-loading class="sub_container loading_container">
+                <img src="loading.gif" alt="">
+                <!-- <p>Loading</p> -->
+            </div>
+
+           </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
